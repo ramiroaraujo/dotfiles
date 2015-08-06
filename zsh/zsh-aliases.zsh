@@ -1,4 +1,5 @@
 # Global aliases
+alias -g oo='open "."'
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
@@ -7,7 +8,8 @@ alias -g H='| head'
 alias -g L="| less"
 alias -g N="| /dev/null"
 alias -g S='| sort'
-alias -g G='| grep' # now you can do: ls foo G something
+alias -g G='| ag' # now you can do: ls foo G something
+alias -g CC='| copy'
 
 # Functions
 #
