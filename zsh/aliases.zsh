@@ -134,6 +134,7 @@ alias tl='tmux list-sessions'
 alias td='tmux detach'
 alias ms='mux start'
 
+alias terminal-notifier='reattach-to-user-namespace terminal-notifier'
 
 # node and npm shorthands
 alias nis='npm install --save'
@@ -162,3 +163,4 @@ alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew d
 
 # yeoman tasks
 alias gser='grunt serve'
+
