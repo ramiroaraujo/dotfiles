@@ -4,5 +4,6 @@ path=(
   $HOME/.node/bin
   $HOME/.yadr/bin
   $HOME/.yadr/bin/yadr
+  $HOME/.composer/vendor/bin
 )
 
