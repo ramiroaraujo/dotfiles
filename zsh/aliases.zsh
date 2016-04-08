@@ -61,7 +61,6 @@ alias ve='vim ~/.vimrc'
 
 # zsh profile editing
 alias ze='vim ~/.zshrc'
-alias zr='source ~/.zshrc'
 
 # Git Aliases
 alias gs='git status'
@@ -112,6 +111,7 @@ alias gsmu='git submodule update'
 alias guiu='git update-index --assume-unchanged'
 alias guic='git update-index --no-assume-unchanged'
 alias guil='git ls-files -v|grep "^h"'
+alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 
 # git svn alias
 alias gsco='git svn clone --prefix=svn/'
@@ -159,6 +159,20 @@ alias gz='tar -zcvf'
 
 alias ka9='killall -9'
 alias k9='kill -9'
+
+# Gem install
+alias sgi='sudo gem install --no-ri --no-rdoc'
+
+# TODOS
+# This uses NValt (NotationalVelocity alt fork) - http://brettterpstra.com/project/nvalt/
+# to find the note called 'todo'
+alias todo='open nvalt://find/todo'
+
+# Forward port 80 to 3000
+alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 80 in'
+
+alias rdm='rake db:migrate'
+alias rdmr='rake db:migrate:redo'
 
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
