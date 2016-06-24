@@ -175,7 +175,7 @@ alias rdm='rake db:migrate'
 alias rdmr='rake db:migrate:redo'
 
 # Homebrew
-alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
+alias brewu='brew update && brew unlink php53 && brew unlink php54 && brew unlink php55 && brew unlink php56 && brew unlink php70 && brew link php53 && brew upgrade | 2>&1 && brew unlink php53 && brew link php54 && brew upgrade | 2>&1 && brew unlink php54 && brew link php55 && brew upgrade | 2>&1 && brew unlink php55 && brew link php56 && brew upgrade | 2>&1 && brew unlink php56 && brew link php70 && brew upgrade | 2>&1 && brew unlink php70 && brew link php56 && brew cleanup && brew prune && brew doctor'
 
 # yeoman tasks
 alias gser='grunt serve'

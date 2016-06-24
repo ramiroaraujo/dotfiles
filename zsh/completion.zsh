@@ -1,5 +1,8 @@
-eval "$(gulp --completion=zsh)"
+export NVM_DIR="/Users/ramiro/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[[ -r $NVM_DIR/zsh_completion ]] && . $NVM_DIR/zsh_completion
 
+eval "$(gulp --completion=zsh)"
 eval "$(grunt --completion=zsh)"
 
 #. <(npm completion)
