@@ -101,6 +101,7 @@ alias gd1='git diff HEAD~1..HEAD'
 alias gd2='git diff HEAD~2..HEAD'
 alias gd3='git diff HEAD~3..HEAD'
 alias gb='git b'
+# Staged and cached are the same thing
 alias gbd='git b -D -w'
 alias gdc='git diff --cached -w'
 alias gpub='grb publish'
