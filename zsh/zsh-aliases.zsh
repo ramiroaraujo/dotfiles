@@ -17,4 +17,3 @@ alias -g CC='| copy'
 # usage: fn foo 
 # to find all files containing 'foo' in the name
 function fn() { ls **/*$1* }
-

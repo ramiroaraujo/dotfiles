@@ -12,6 +12,9 @@ elif [[ $unamestr == 'Darwin' ]]; then
   platform='darwin'
 fi
 
+# git up
+git config --global alias.up 'pull --rebase --autostash'
+
 # YADR support
 alias yav='yadr vim-add-plugin'
 alias ydv='yadr vim-delete-plugin'
@@ -63,7 +66,9 @@ alias ve='vim ~/.vimrc'
 alias ze='vim ~/.zshrc'
 
 # Git Aliases
+alias cdr='cd $(git rev-parse --show-cdup)'
 alias gs='git status'
+alias gts='gtm status'
 alias gst='git stash'
 alias gsp='git stash pop'
 alias gsa='git stash apply'
@@ -79,6 +84,8 @@ alias guns='git unstage'
 alias gunc='git uncommit'
 alias gm='git merge'
 alias gms='git merge --squash'
+alias gmm='git merge --no-edit'
+alias gmne='git merge --no-edit --no-ff'
 alias gam='git amend --reset-author'
 alias grv='git remote -v'
 alias grr='git remote rm'
@@ -91,6 +98,8 @@ alias gl='git l'
 alias gf='git fetch'
 alias gd='git diff'
 alias gd1='git diff HEAD~1..HEAD'
+alias gd2='git diff HEAD~2..HEAD'
+alias gd3='git diff HEAD~3..HEAD'
 alias gb='git b'
 alias gbd='git b -D -w'
 alias gdc='git diff --cached -w'
@@ -144,15 +153,9 @@ alias nrs='npm uninstall --save'
 alias nisd='npm install --save-dev'
 alias nrsd='npm uninstall --save-dev'
 
-# bower fix in order to specify versions
-alias bower='noglob bower'
-
-# php
-alias comp='composer'
-
 # phpstorm
 alias pst='pstorm'
-alias idiff='/Users/ramiro/Applications/PhpStorm.app/Contents/MacOS/phpstorm diff'
+alias idiff='/Applications/PhpStorm.app/Contents/MacOS/phpstorm diff'
 
 # Zippin
 alias gz='tar -zcvf'

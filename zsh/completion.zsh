@@ -1,10 +1,10 @@
-export NVM_DIR="/Users/ramiro/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[[ -r $NVM_DIR/zsh_completion ]] && . $NVM_DIR/zsh_completion
-
-eval "$(gulp --completion=zsh)"
-eval "$(grunt --completion=zsh)"
-
+#export NVM_DIR="/Users/ramiro/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+#[[ -r $NVM_DIR/zsh_completion ]] && . $NVM_DIR/zsh_completion
+#
+#eval "$(gulp --completion=zsh)"
+#eval "$(grunt --completion=zsh)"
+#
 #. <(npm completion)
 
 _cakephp () {
@@ -38,9 +38,3 @@ _cakephp () {
 
 compdef _cakephp bin/cake
 compdef _cakephp cake
-
-#Alias
-#alias c3='bin/cake'
-
-#alias c3cache='bin/cake orm_cache clear'
-#alias c3migrate='bin/cake migrations migrate'
